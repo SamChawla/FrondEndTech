@@ -64,3 +64,25 @@ var sq2 = square(n);
 ---
 
 ## Hoisting in JavaScript (variables & functions)
+
+```javascript
+var x = 7;
+
+function getName(){
+    console.log("Welcome to the world of JS.");
+}
+
+getName();
+console.log(x)
+```
+
+**Hoisting**:  It is a phenomenon in JS which allows us to access the function and variable even before we have intitalized it.
+
+- Even before the scripts gets executed all the variables are initialized with value undefined and all the functions are initialized with value of function statement.
+- Arrow functions don’t support Hoisting because they behave like normal variable and in the global memory they are initialized with `undefined`.
+
+```javascript
+var getName = () => {
+    console.log("Welcome to the world of JS.)
+}
+```
